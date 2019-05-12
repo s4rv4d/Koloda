@@ -102,17 +102,17 @@ public class DraggableCardView: UIView, UIGestureRecognizerDelegate {
     }
     
     private func setup() {
-        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(DraggableCardView.panGestureRecognized(_:)))
-        addGestureRecognizer(panGestureRecognizer)
-        panGestureRecognizer.delegate = self
-        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DraggableCardView.tapRecognized(_:)))
-        tapGestureRecognizer.delegate = self
-        tapGestureRecognizer.cancelsTouchesInView = false
-        addGestureRecognizer(tapGestureRecognizer)
-
-        if let delegate = delegate {
-            cardSwipeActionAnimationDuration = delegate.card(cardSwipeSpeed: self).rawValue
-        }
+//        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(DraggableCardView.panGestureRecognized(_:)))
+//        addGestureRecognizer(panGestureRecognizer)
+//        panGestureRecognizer.delegate = self
+//        tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DraggableCardView.tapRecognized(_:)))
+//        tapGestureRecognizer.delegate = self
+//        tapGestureRecognizer.cancelsTouchesInView = false
+//        addGestureRecognizer(tapGestureRecognizer)
+//
+//        if let delegate = delegate {
+//            cardSwipeActionAnimationDuration = delegate.card(cardSwipeSpeed: self).rawValue
+//        }
     }
     
     //MARK: Configurations
