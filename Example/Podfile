@@ -2,7 +2,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'Koloda_Example' do
-  pod "Koloda", :path => "../"
+ # pod "Koloda", :path => "../"
+	 #pod 'JJFloatingActionButton', :git => 'https://github.com/s4rv4d/JJFloatingActionButton.git'
+	pod 'Koloda', :git => 'https://github.com/s4rv4d/Koloda.git'
 end
 
 post_install do |installer|
